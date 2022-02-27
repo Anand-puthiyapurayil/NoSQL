@@ -1,5 +1,4 @@
 import pymongo as pymongo
-mongoexport --collection=<c> <options> <connection-string>
 
 
 def connectdb():
