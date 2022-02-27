@@ -7,7 +7,7 @@ def connectdb():
     db = client.test
     col = db.countries
     con = db.continents
-
+    #  Send the list of continent with there number of countries
     def continents():
         agg_pipeline = [
         {

@@ -7,7 +7,7 @@ def connectdb():
     db = client.test
     col = db.countries
     con = db.continents
-
+    # 7/ Get countrieswhich have a ‘u’ in their name and more 100 000 people inside
     def query7():
         for continents in col.find({
                     'Name':

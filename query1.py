@@ -8,6 +8,7 @@ def connectdb():
     col = db.countries
     con = db.continents
 
+    # 1/ Get all the country where a letter or word given is in the name=> for example: FR Fran...
     def find_country():
         word=str(input("Enter the word"))
         for country in col.find({"Name":{'$regex':word,'$options':'i'}}):

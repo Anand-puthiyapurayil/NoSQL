@@ -7,7 +7,7 @@ def connectdb():
     db = client.test
     col = db.countries
     con = db.continents
-
+    #     #     5/ Add new attributes inside countries which is number of people (find it on wikipedia)
     col.update_one({'Name': 'USA'}, {'$set': {'Population': 332915073}})
     col.update_one({'Name': 'Australia'}, {'$set': {'Population':25987867}})
     col.update_one({'Name': 'Sweden'}, {'$set': {'Population': 10203324}})
